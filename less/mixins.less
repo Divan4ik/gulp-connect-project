@@ -1,0 +1,22 @@
+.animation {
+	transition: all 0.15s ease-out;
+}
+
+.fade {
+	visibility: hidden;
+	opacity: 0;
+	.animation();
+
+	&.in {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+.row {
+	&:after {
+		content: "";
+		display: block;
+		clear:both;
+	}
+}
